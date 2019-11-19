@@ -29,11 +29,11 @@ class Navbar extends React.Component {
     })
   }
   render () {
-    let text = this.state.isLoggedIn ? "Hi " + this.state.username + "| logout" : "login"
+    let text = this.state.isLoggedIn ? "Hi " + this.state.username + "| LOGOUT" : "LOGIN"
     let btnState = this.state.isLoggedIn ? "btn-success" : "btn-outline-success"
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="index.html">
             <img
               src="https://static.thenounproject.com/png/105260-200.png"
@@ -59,8 +59,13 @@ class Navbar extends React.Component {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
               <NavList
-                name="About me"
+                name="Home"
                 isActive="active"
+                link="index.html"
+              />
+              <NavList
+                name="About me"
+                isActive=""
                 link="https://firnazluztian.github.io/"
               />
               <NavList name="Contact me" isActive="" link="contactme.html" />

@@ -12,18 +12,18 @@ function Header () {
           <div class="col-sm-4" box>
             <div className="box" id="parent">
               <span className="box" id="child">
-                <h1>E-student Notes</h1>
-                <h3>The only app you need for your classes notes taking</h3>
-                <p>{faker.lorem.paragraph ()}</p>
+                <h1>E-Student Notes</h1>
+                <h3>The only app that you will need for your classes notes taking</h3>
+                <p style={{textAlign:"justify"}}>{faker.lorem.paragraph()}</p>
                 <button
                   style={{marginRight: 1 + 'em'}}
                   type="button"
                   class="btn btn-outline-primary"
                 >
-                  Sign up
+                  SIGNUP
                 </button>
                 <button type="button" class="btn btn-outline-success">
-                  Log in
+                  LOGIN
                 </button>
               </span>
             </div>
